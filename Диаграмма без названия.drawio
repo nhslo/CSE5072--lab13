@@ -1,0 +1,191 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0" version="29.2.1">
+  <diagram name="Страница-1" id="LTa8EQ7HSpaMhGk3mLzw">
+    <mxGraphModel dx="1037" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageEnabled="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- System Boundary -->
+        <mxCell id="systemBoundary" value="Система управления онлайн-курсов" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="50" width="750" height="750" as="geometry" />
+        </mxCell>
+        <!-- Actors -->
+        <mxCell id="actorStudent" value="Студент" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="100" width="70" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="actorInstructor" value="Преподаватель" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="350" width="70" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="actorAdmin" value="Администратор" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="600" width="70" height="100" as="geometry" />
+        </mxCell>
+        <!-- Use Cases -->
+        <mxCell id="ucRegisterAuth" value="Регистрация и авторизация" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="systemBoundary">
+          <mxGeometry x="200" y="50" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ucEmailConfirm" value="Подтверждение почты" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="systemBoundary">
+          <mxGeometry x="450" y="50" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ucViewCourses" value="Просмотр курсов" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="systemBoundary">
+          <mxGeometry x="50" y="150" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ucEnrollCourse" value="Запись на курс" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="systemBoundary">
+          <mxGeometry x="50" y="230" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ucLeaveReview" value="Оставить отзыв" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="systemBoundary">
+          <mxGeometry x="250" y="230" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ucTakeTests" value="Прохождение тестов" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="systemBoundary">
+          <mxGeometry x="50" y="310" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ucTrackProgress" value="Отслеживание прогресса" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="systemBoundary">
+          <mxGeometry x="250" y="310" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ucCreateEditCourses" value="Создание и редактирование курсов" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="systemBoundary">
+          <mxGeometry x="200" y="400" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ucAddMaterials" value="Добавление материалов курса" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="systemBoundary">
+          <mxGeometry x="450" y="380" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ucCreateTests" value="Создание тестов для курсов" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="systemBoundary">
+          <mxGeometry x="450" y="450" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ucViewStats" value="Просмотр статистики" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="systemBoundary">
+          <mxGeometry x="50" y="500" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ucModerateReviews" value="Модерация отзывов" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="systemBoundary">
+          <mxGeometry x="50" y="580" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ucManageAccounts" value="Управление учетными записями" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="systemBoundary">
+          <mxGeometry x="200" y="650" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ucManageCategories" value="Управление категориями курсов" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="systemBoundary">
+          <mxGeometry x="450" y="620" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ucViewAnalytics" value="Просмотр аналитики" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="systemBoundary">
+          <mxGeometry x="450" y="690" width="160" height="60" as="geometry" />
+        </mxCell>
+        <!-- Associations -->
+        <mxCell id="conn1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actorStudent" target="ucRegisterAuth">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="85" y="130" />
+              <mxPoint x="170" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actorStudent" target="ucViewCourses">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="85" y="180" />
+              <mxPoint x="170" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn3" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actorStudent" target="ucEnrollCourse">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="85" y="260" />
+              <mxPoint x="170" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn4" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actorStudent" target="ucTakeTests">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="85" y="340" />
+              <mxPoint x="170" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn5" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actorInstructor" target="ucRegisterAuth">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="85" y="380" />
+              <mxPoint x="170" y="380" />
+              <mxPoint x="170" y="80" />
+              <mxPoint x="200" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn6" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actorInstructor" target="ucCreateEditCourses">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="85" y="430" />
+              <mxPoint x="170" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn7" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actorInstructor" target="ucViewStats">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="85" y="530" />
+              <mxPoint x="170" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn8" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actorInstructor" target="ucModerateReviews">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="85" y="610" />
+              <mxPoint x="170" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn9" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actorAdmin" target="ucRegisterAuth">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="85" y="630" />
+              <mxPoint x="170" y="630" />
+              <mxPoint x="170" y="80" />
+              <mxPoint x="200" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn10" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actorAdmin" target="ucManageAccounts">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="85" y="680" />
+              <mxPoint x="170" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn11" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actorAdmin" target="ucManageCategories">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="85" y="720" />
+              <mxPoint x="170" y="720" />
+              <mxPoint x="170" y="650" />
+              <mxPoint x="450" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="conn12" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="actorAdmin" target="ucViewAnalytics">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="85" y="750" />
+              <mxPoint x="170" y="750" />
+              <mxPoint x="170" y="720" />
+              <mxPoint x="450" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <!-- Includes / Extends -->
+        <mxCell id="connIncludeEmail" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;endFill=0;endSize=12;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="systemBoundary" source="ucRegisterAuth" target="ucEmailConfirm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="connExtendReview" value="&lt;&lt;extend&gt;&gt;" style="endArrow=open;endFill=0;endSize=12;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="systemBoundary" source="ucLeaveReview" target="ucEnrollCourse">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="connIncludeProgress" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;endFill=0;endSize=12;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="systemBoundary" source="ucTakeTests" target="ucTrackProgress">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="connIncludeMaterials" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;endFill=0;endSize=12;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="systemBoundary" source="ucCreateEditCourses" target="ucAddMaterials">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="connIncludeCreateTests" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;endFill=0;endSize=12;dashed=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="systemBoundary" source="ucCreateEditCourses" target="ucCreateTests">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
